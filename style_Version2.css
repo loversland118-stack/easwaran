@@ -1,0 +1,168 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    background: #f7f9fa;
+    color: #222;
+}
+
+header {
+    background: #222;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #00b894;
+}
+
+.container {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.hero {
+    background: linear-gradient(100deg, #00b894, #0984e3);
+    color: #fff;
+    text-align: center;
+    padding: 4rem 1rem 3rem 1rem;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.projects, .team, .contact {
+    margin-top: 3rem;
+}
+
+.projects h2,
+.team h2,
+.contact h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.project-list {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-card {
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    border-radius: 10px;
+    padding: 1.5rem;
+    flex: 1 1 220px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.team-list {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team-member {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    padding: 1rem;
+    text-align: center;
+    flex: 1 1 170px;
+    max-width: 180px;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin-bottom: 0.7rem;
+}
+
+.team-member h4 {
+    margin: 0.5rem 0 0.2rem 0;
+    font-size: 1.1rem;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    gap: 1rem;
+}
+
+.contact input,
+.contact textarea {
+    padding: 0.8rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.contact button {
+    background: #00b894;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.8rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.contact button:hover {
+    background: #0984e3;
+}
+
+footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1.2rem 0;
+    font-size: 1rem;
+    margin-top: 3rem;
+}
+
+@media (max-width: 700px) {
+    .project-list,
+    .team-list {
+        flex-direction: column;
+        gap: 1.3rem;
+    }
+    .container {
+        padding: 1.5rem 0.5rem;
+    }
+    .hero {
+        padding: 2rem 1rem 2rem 1rem;
+    }
+}
